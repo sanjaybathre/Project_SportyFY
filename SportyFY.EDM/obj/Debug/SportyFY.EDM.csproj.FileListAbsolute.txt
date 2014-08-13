@@ -1,0 +1,7 @@
+D:\PROJECTS\SportyFY\SportyFY.EDM\bin\Debug\SportyFY.EDM.dll.config
+D:\PROJECTS\SportyFY\SportyFY.EDM\bin\Debug\SportyFY.EDM.dll
+D:\PROJECTS\SportyFY\SportyFY.EDM\bin\Debug\SportyFY.EDM.pdb
+D:\PROJECTS\SportyFY\SportyFY.EDM\bin\Debug\EntityFramework.dll
+D:\PROJECTS\SportyFY\SportyFY.EDM\bin\Debug\EntityFramework.xml
+D:\PROJECTS\SportyFY\SportyFY.EDM\obj\Debug\SportyFY.EDM.dll
+D:\PROJECTS\SportyFY\SportyFY.EDM\obj\Debug\SportyFY.EDM.pdb

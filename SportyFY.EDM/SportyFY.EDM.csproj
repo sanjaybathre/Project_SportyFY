@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{114BE653-FB78-4C8A-9A62-4374BB3A51C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SportyFY.EDM</RootNamespace>
+    <AssemblyName>SportyFY.EDM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\aspnet_Applications.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_Membership.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_Paths.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_Profile.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_Roles.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_SchemaVersions.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_Users.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\aspnet_WebEvent_Events.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NewsCategoryMaster.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NewsMaster.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NewsRating.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NewsSubCategoryMaster.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NewsTag.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SportyFY_EDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportyFY_EDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SportyFY_EDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SportyFY_EDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportyFY_EDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserMaster.cs">
+      <DependentUpon>SportyFY_EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model\SportyFY_EDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SportyFY_EDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Model\SportyFY_EDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SportyFY_EDM.edmx</DependentUpon>
+      <LastGenOutput>SportyFY_EDM.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\SportyFY_EDM.edmx.diagram">
+      <DependentUpon>SportyFY_EDM.edmx</DependentUpon>
+    </None>
+    <None Include="Model\SportyFY_EDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SportyFY_EDM.edmx</DependentUpon>
+      <LastGenOutput>SportyFY_EDM.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

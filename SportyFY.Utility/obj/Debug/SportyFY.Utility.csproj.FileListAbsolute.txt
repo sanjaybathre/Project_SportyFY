@@ -1,0 +1,12 @@
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\SportyFY.Utility.dll
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\SportyFY.Utility.pdb
+D:\PROJECTS\SportyFY\SportyFY.Utility\obj\Debug\SportyFY.Utility.dll
+D:\PROJECTS\SportyFY\SportyFY.Utility\obj\Debug\SportyFY.Utility.pdb
+D:\PROJECTS\SportyFY\SportyFY.Utility\obj\Debug\SportyFY.Utility.csprojResolveAssemblyReference.cache
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\SportyFY.Utility.dll.config
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\EntityFramework.dll
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\SportyFY.EDM.dll
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\SportyFY.EDM.pdb
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\EntityFramework.xml
+D:\PROJECTS\SportyFY\SportyFY.Utility\bin\Debug\EntityFramework.SqlServer.xml

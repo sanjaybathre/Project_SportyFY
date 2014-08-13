@@ -1,0 +1,9 @@
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\SportyFY.Model.dll.config
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\SportyFY.Model.dll
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\SportyFY.Model.pdb
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\EntityFramework.dll
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\EntityFramework.xml
+D:\PROJECTS\SportyFY\SportyFY.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROJECTS\SportyFY\SportyFY.Model\obj\Debug\SportyFY.Model.dll
+D:\PROJECTS\SportyFY\SportyFY.Model\obj\Debug\SportyFY.Model.pdb

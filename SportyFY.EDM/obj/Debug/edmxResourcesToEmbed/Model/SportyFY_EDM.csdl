@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SportyFYModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SportyFYEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Applications" EntityType="SportyFYModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Membership" EntityType="SportyFYModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_Paths" EntityType="SportyFYModel.aspnet_Paths" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="SportyFYModel.aspnet_PersonalizationAllUsers" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="SportyFYModel.aspnet_PersonalizationPerUser" />
+    <EntitySet Name="aspnet_Profile" EntityType="SportyFYModel.aspnet_Profile" />
+    <EntitySet Name="aspnet_Roles" EntityType="SportyFYModel.aspnet_Roles" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="SportyFYModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_Users" EntityType="SportyFYModel.aspnet_Users" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="SportyFYModel.aspnet_WebEvent_Events" />
+    <EntitySet Name="NewsCategoryMasters" EntityType="SportyFYModel.NewsCategoryMaster" />
+    <EntitySet Name="NewsMasters" EntityType="SportyFYModel.NewsMaster" />
+    <EntitySet Name="NewsRatings" EntityType="SportyFYModel.NewsRating" />
+    <EntitySet Name="NewsSubCategoryMasters" EntityType="SportyFYModel.NewsSubCategoryMaster" />
+    <EntitySet Name="NewsTags" EntityType="SportyFYModel.NewsTag" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="SportyFYModel.FK__aspnet_Me__Appli__21B6055D">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__5AEE82B9" Association="SportyFYModel.FK__aspnet_Pa__Appli__5AEE82B9">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__440B1D61" Association="SportyFYModel.FK__aspnet_Ro__Appli__440B1D61">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__0DAF0CB0" Association="SportyFYModel.FK__aspnet_Us__Appli__0DAF0CB0">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="SportyFYModel.FK__aspnet_Me__UserI__22AA2996">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__628FA481" Association="SportyFYModel.FK__aspnet_Pe__PathI__628FA481">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__68487DD7" Association="SportyFYModel.FK__aspnet_Pe__PathI__68487DD7">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__693CA210" Association="SportyFYModel.FK__aspnet_Pe__UserI__693CA210">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__38996AB5" Association="SportyFYModel.FK__aspnet_Pr__UserI__38996AB5">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewsSubCategoryMaster_NewsCategoryMaster" Association="SportyFYModel.FK_NewsSubCategoryMaster_NewsCategoryMaster">
+      <End Role="NewsCategoryMaster" EntitySet="NewsCategoryMasters" />
+      <End Role="NewsSubCategoryMaster" EntitySet="NewsSubCategoryMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewsRatings_NewsMaster" Association="SportyFYModel.FK_NewsRatings_NewsMaster">
+      <End Role="NewsMaster" EntitySet="NewsMasters" />
+      <End Role="NewsRatings" EntitySet="NewsRatings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewsTags_NewsMaster" Association="SportyFYModel.FK_NewsTags_NewsMaster">
+      <End Role="NewsMaster" EntitySet="NewsMasters" />
+      <End Role="NewsTags" EntitySet="NewsTags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_1_NewsSubCategoryMaster" Association="SportyFYModel.FK_Table_1_NewsSubCategoryMaster">
+      <End Role="NewsSubCategoryMaster" EntitySet="NewsSubCategoryMasters" />
+      <End Role="NewsMaster" EntitySet="NewsMasters" />
+    </AssociationSet>
+    <AssociationSet Name="aspnet_UsersInRoles" Association="SportyFYModel.aspnet_UsersInRoles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <EntitySet Name="UserMasters" EntityType="SportyFYModel.UserMaster" />
+    <AssociationSet Name="FK_UserMaster_aspnet_Users" Association="SportyFYModel.FK_UserMaster_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="UserMaster" EntitySet="UserMasters" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="SportyFYModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="SportyFYModel.FK__aspnet_Pa__Appli__5AEE82B9" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="SportyFYModel.FK__aspnet_Ro__Appli__440B1D61" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.FK__aspnet_Us__Appli__0DAF0CB0" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="SportyFYModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="SportyFYModel.FK__aspnet_Pa__Appli__5AEE82B9" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="SportyFYModel.FK__aspnet_Pe__PathI__628FA481" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="SportyFYModel.FK__aspnet_Pe__PathI__68487DD7" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="SportyFYModel.FK__aspnet_Pe__PathI__628FA481" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="PathId" Type="Guid" />
+    <Property Name="UserId" Type="Guid" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="SportyFYModel.FK__aspnet_Pe__PathI__68487DD7" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.FK__aspnet_Pe__UserI__693CA210" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.FK__aspnet_Pr__UserI__38996AB5" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="SportyFYModel.FK__aspnet_Ro__Appli__440B1D61" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="SportyFYModel.FK__aspnet_Us__Appli__0DAF0CB0" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="SportyFYModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="SportyFYModel.FK__aspnet_Pe__UserI__693CA210" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="SportyFYModel.FK__aspnet_Pr__UserI__38996AB5" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="SportyFYModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="UserMaster" Relationship="SportyFYModel.FK_UserMaster_aspnet_Users" FromRole="aspnet_Users" ToRole="UserMaster" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+    <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventCode" Type="Int32" Nullable="false" />
+    <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="NewsCategoryMaster">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="IsDel" Type="Boolean" />
+    <NavigationProperty Name="NewsSubCategoryMasters" Relationship="SportyFYModel.FK_NewsSubCategoryMaster_NewsCategoryMaster" FromRole="NewsCategoryMaster" ToRole="NewsSubCategoryMaster" />
+  </EntityType>
+  <EntityType Name="NewsMaster">
+    <Key>
+      <PropertyRef Name="NewsId" />
+    </Key>
+    <Property Name="NewsId" Type="Guid" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SubCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="NewsTitle" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="NewsContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NewsAuthor" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="NewsCreateDate" Type="DateTime" Precision="3" />
+    <Property Name="NewsRatingId" Type="Guid" />
+    <Property Name="NewsTagId" Type="Guid" />
+    <Property Name="IsDel" Type="Boolean" />
+    <Property Name="Userid" Type="Guid" />
+    <NavigationProperty Name="NewsRatings" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsMaster" ToRole="NewsRatings" />
+    <NavigationProperty Name="NewsTags" Relationship="SportyFYModel.FK_NewsTags_NewsMaster" FromRole="NewsMaster" ToRole="NewsTags" />
+    <NavigationProperty Name="NewsSubCategoryMaster" Relationship="SportyFYModel.FK_Table_1_NewsSubCategoryMaster" FromRole="NewsMaster" ToRole="NewsSubCategoryMaster" />
+  </EntityType>
+  <EntityType Name="NewsRating">
+    <Key>
+      <PropertyRef Name="RatingId" />
+    </Key>
+    <Property Name="RatingId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NewsId" Type="Guid" Nullable="false" />
+    <Property Name="Userid" Type="Guid" />
+    <Property Name="Rating" Type="Decimal" Precision="5" Scale="1" />
+    <NavigationProperty Name="NewsMaster" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsRatings" ToRole="NewsMaster" />
+  </EntityType>
+  <EntityType Name="NewsSubCategoryMaster">
+    <Key>
+      <PropertyRef Name="SubCategoryId" />
+    </Key>
+    <Property Name="SubCategoryId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SubCategory" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="IsDel" Type="Boolean" />
+    <NavigationProperty Name="NewsCategoryMaster" Relationship="SportyFYModel.FK_NewsSubCategoryMaster_NewsCategoryMaster" FromRole="NewsSubCategoryMaster" ToRole="NewsCategoryMaster" />
+    <NavigationProperty Name="NewsMasters" Relationship="SportyFYModel.FK_Table_1_NewsSubCategoryMaster" FromRole="NewsSubCategoryMaster" ToRole="NewsMaster" />
+  </EntityType>
+  <EntityType Name="NewsTag">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NewsId" Type="Guid" />
+    <Property Name="TagKeywords" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Userid" Type="Guid" />
+    <NavigationProperty Name="NewsMaster" Relationship="SportyFYModel.FK_NewsTags_NewsMaster" FromRole="NewsTags" ToRole="NewsMaster" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__21B6055D">
+    <End Role="aspnet_Applications" Type="SportyFYModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="SportyFYModel.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__5AEE82B9">
+    <End Role="aspnet_Applications" Type="SportyFYModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="SportyFYModel.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__440B1D61">
+    <End Role="aspnet_Applications" Type="SportyFYModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="SportyFYModel.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__0DAF0CB0">
+    <End Role="aspnet_Applications" Type="SportyFYModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="SportyFYModel.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__22AA2996">
+    <End Role="aspnet_Users" Type="SportyFYModel.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="SportyFYModel.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__628FA481">
+    <End Role="aspnet_Paths" Type="SportyFYModel.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="SportyFYModel.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__68487DD7">
+    <End Role="aspnet_Paths" Type="SportyFYModel.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="SportyFYModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__693CA210">
+    <End Role="aspnet_Users" Type="SportyFYModel.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="SportyFYModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__38996AB5">
+    <End Role="aspnet_Users" Type="SportyFYModel.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="SportyFYModel.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewsSubCategoryMaster_NewsCategoryMaster">
+    <End Role="NewsCategoryMaster" Type="SportyFYModel.NewsCategoryMaster" Multiplicity="1" />
+    <End Role="NewsSubCategoryMaster" Type="SportyFYModel.NewsSubCategoryMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewsCategoryMaster">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="NewsSubCategoryMaster">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewsRatings_NewsMaster">
+    <End Role="NewsMaster" Type="SportyFYModel.NewsMaster" Multiplicity="1" />
+    <End Role="NewsRatings" Type="SportyFYModel.NewsRating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewsMaster">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="NewsRatings">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewsTags_NewsMaster">
+    <End Role="NewsMaster" Type="SportyFYModel.NewsMaster" Multiplicity="0..1" />
+    <End Role="NewsTags" Type="SportyFYModel.NewsTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewsMaster">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="NewsTags">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_1_NewsSubCategoryMaster">
+    <End Role="NewsSubCategoryMaster" Type="SportyFYModel.NewsSubCategoryMaster" Multiplicity="1" />
+    <End Role="NewsMaster" Type="SportyFYModel.NewsMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewsSubCategoryMaster">
+        <PropertyRef Name="SubCategoryId" />
+      </Principal>
+      <Dependent Role="NewsMaster">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="aspnet_UsersInRoles">
+    <End Role="aspnet_Roles" Type="SportyFYModel.aspnet_Roles" Multiplicity="*" />
+    <End Role="aspnet_Users" Type="SportyFYModel.aspnet_Users" Multiplicity="*" />
+  </Association>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="firstname" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="lastname" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="company" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="mobile" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="city" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="state" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="country" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="address" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pincode" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="status" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="isMailsent" />
+    <NavigationProperty Name="aspnet_Users" Relationship="SportyFYModel.FK_UserMaster_aspnet_Users" FromRole="UserMaster" ToRole="aspnet_Users" />
+  </EntityType>
+  <Association Name="FK_UserMaster_aspnet_Users">
+    <End Type="SportyFYModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="SportyFYModel.UserMaster" Role="UserMaster" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
