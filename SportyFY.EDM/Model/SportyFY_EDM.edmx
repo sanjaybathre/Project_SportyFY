@@ -242,6 +242,7 @@
           <Property Name="NewsTagId" Type="uniqueidentifier" />
           <Property Name="IsDel" Type="bit" />
           <Property Name="Userid" Type="uniqueidentifier" />
+          <Property Name="NewsDate" Type="datetime" />
         </EntityType>
         <EntityType Name="NewsRatings">
           <Key>
@@ -733,6 +734,7 @@
           <NavigationProperty Name="NewsRatings" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsMaster" ToRole="NewsRatings" />
           <NavigationProperty Name="NewsTags" Relationship="SportyFYModel.FK_NewsTags_NewsMaster" FromRole="NewsMaster" ToRole="NewsTags" />
           <NavigationProperty Name="NewsSubCategoryMaster" Relationship="SportyFYModel.FK_Table_1_NewsSubCategoryMaster" FromRole="NewsMaster" ToRole="NewsSubCategoryMaster" />
+          <Property Type="DateTime" Name="NewsDate" Precision="3" />
         </EntityType>
         <EntityType Name="NewsRating">
           <Key>
@@ -1106,6 +1108,7 @@
           <EntitySetMapping Name="NewsMasters">
             <EntityTypeMapping TypeName="SportyFYModel.NewsMaster">
               <MappingFragment StoreEntitySet="NewsMaster">
+                <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
                 <ScalarProperty Name="NewsId" ColumnName="NewsId" />
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />

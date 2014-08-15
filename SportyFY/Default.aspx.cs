@@ -11,7 +11,7 @@ namespace SportyFY
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Users/Admin/Dashboard");
+            Response.Redirect("~/Views/Users/Admin/NewsManagement");
         }
     }
 }

@@ -12,23 +12,25 @@ namespace SportyFY.Views.Shared
     {
         protected void PrepareMenuBar()
         {
+            pnlAdmin.Visible = false;
+
             var role = Roles.GetRolesForUser()[0].ToLower().Trim();
 
             switch (role)
             {
-                case "Admin":
+                case "admin":
+                    pnlAdmin.Visible = true;
+                    break;
+                case "superadmin":
                     //TODO
                     break;
-                case "SuperAdmin":
+                case "team":
                     //TODO
                     break;
-                case "Team":
+                case "player":
                     //TODO
                     break;
-                case "Player":
-                    //TODO
-                    break;
-                case "User":
+                case "user":
                     //TODO
                     break;
                 default:
@@ -38,7 +40,10 @@ namespace SportyFY.Views.Shared
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                PrepareMenuBar();
+            }
         }
     }
 }

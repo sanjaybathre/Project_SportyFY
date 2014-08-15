@@ -237,6 +237,7 @@
     <Property Name="NewsTagId" Type="uniqueidentifier" />
     <Property Name="IsDel" Type="bit" />
     <Property Name="Userid" Type="uniqueidentifier" />
+    <Property Name="NewsDate" Type="datetime" />
   </EntityType>
   <EntityType Name="NewsRatings">
     <Key>

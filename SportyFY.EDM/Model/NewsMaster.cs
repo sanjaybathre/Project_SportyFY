@@ -31,6 +31,7 @@ namespace SportyFY.EDM.Model
         public Nullable<System.Guid> NewsTagId { get; set; }
         public Nullable<bool> IsDel { get; set; }
         public Nullable<System.Guid> Userid { get; set; }
+        public Nullable<System.DateTime> NewsDate { get; set; }
     
         public virtual ICollection<NewsRating> NewsRatings { get; set; }
         public virtual ICollection<NewsTag> NewsTags { get; set; }

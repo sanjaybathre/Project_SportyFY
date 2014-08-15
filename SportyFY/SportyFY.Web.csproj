@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\TBN\BN.Web.Client\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\..\TBN\BN.Web.Client\bin\AjaxMin.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -70,7 +76,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Authentication\Login.aspx" />
     <Content Include="Views\Common\Home.aspx" />
-    <Content Include="Views\Users\Admin\Dashboard.aspx" />
+    <Content Include="Views\Users\Admin\NewsManagement.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -143,12 +149,12 @@
     <Compile Include="Views\Shared\_Layout.Master.designer.cs">
       <DependentUpon>_Layout.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\Users\Admin\Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Views\Users\Admin\NewsManagement.aspx.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Users\Admin\Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Views\Users\Admin\NewsManagement.aspx.designer.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -249,6 +249,7 @@
     <NavigationProperty Name="NewsRatings" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsMaster" ToRole="NewsRatings" />
     <NavigationProperty Name="NewsTags" Relationship="SportyFYModel.FK_NewsTags_NewsMaster" FromRole="NewsMaster" ToRole="NewsTags" />
     <NavigationProperty Name="NewsSubCategoryMaster" Relationship="SportyFYModel.FK_Table_1_NewsSubCategoryMaster" FromRole="NewsMaster" ToRole="NewsSubCategoryMaster" />
+    <Property Type="DateTime" Name="NewsDate" Precision="3" />
   </EntityType>
   <EntityType Name="NewsRating">
     <Key>

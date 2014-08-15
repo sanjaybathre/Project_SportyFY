@@ -10,11 +10,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
+        <div>
+            <asp:Panel ID="pnlAdmin" runat="server">
+                <a href="/Views/Users/Admin/NewsManagement.aspx">News Section</a>
+            </asp:Panel>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder_Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

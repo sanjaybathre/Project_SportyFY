@@ -58,7 +58,7 @@ namespace SportyFY.Utility.Helpers
                         //check logged in user role.....
                         if (Roles.IsUserInRole(username, item.RoleName))
                         {
-                            HttpContext.Current.Response.Redirect("~/Views/Common/Home.aspx", termination);
+                            HttpContext.Current.Response.Redirect("~/Views/Common/Home", termination);
                         }
                     }
                     HttpContext.Current.Session.RemoveAll();

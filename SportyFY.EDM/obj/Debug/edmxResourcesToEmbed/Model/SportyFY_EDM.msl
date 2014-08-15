@@ -145,6 +145,7 @@
     <EntitySetMapping Name="NewsMasters">
       <EntityTypeMapping TypeName="SportyFYModel.NewsMaster">
         <MappingFragment StoreEntitySet="NewsMaster">
+          <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
           <ScalarProperty Name="NewsId" ColumnName="NewsId" />
           <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
           <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
