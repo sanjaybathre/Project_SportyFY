@@ -1,0 +1,14 @@
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.BuisnessAccessLayer.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.BuisnessAccessLayer.pdb
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.DataAccessLayer.SqlServer.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.EDM.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\Elmah.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\EntityFramework.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.DataAccessLayer.SqlServer.pdb
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.EDM.pdb
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\EntityFramework.xml
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\obj\Debug\SportyFY.BuisnessAccessLayer.csprojResolveAssemblyReference.cache
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\obj\Debug\SportyFY.BuisnessAccessLayer.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\obj\Debug\SportyFY.BuisnessAccessLayer.pdb
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.Utility.dll
+D:\PROJECTS\SportyFY\SportyFY.BuisnessAccessLayer\bin\Debug\SportyFY.Utility.pdb

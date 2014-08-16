@@ -242,8 +242,6 @@
     <Property Name="NewsContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="NewsAuthor" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
     <Property Name="NewsCreateDate" Type="DateTime" Precision="3" />
-    <Property Name="NewsRatingId" Type="Guid" />
-    <Property Name="NewsTagId" Type="Guid" />
     <Property Name="IsDel" Type="Boolean" />
     <Property Name="Userid" Type="Guid" />
     <NavigationProperty Name="NewsRatings" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsMaster" ToRole="NewsRatings" />

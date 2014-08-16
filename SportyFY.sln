@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportyFY.DataAccessLayer.Sq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportyFY.EDM", "SportyFY.EDM\SportyFY.EDM.csproj", "{114BE653-FB78-4C8A-9A62-4374BB3A51C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportyFY.BuisnessAccessLayer", "SportyFY.BuisnessAccessLayer\SportyFY.BuisnessAccessLayer.csproj", "{7EFAB29C-8743-4F23-A4C6-19F54D3100DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{114BE653-FB78-4C8A-9A62-4374BB3A51C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114BE653-FB78-4C8A-9A62-4374BB3A51C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114BE653-FB78-4C8A-9A62-4374BB3A51C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFAB29C-8743-4F23-A4C6-19F54D3100DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFAB29C-8743-4F23-A4C6-19F54D3100DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFAB29C-8743-4F23-A4C6-19F54D3100DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFAB29C-8743-4F23-A4C6-19F54D3100DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

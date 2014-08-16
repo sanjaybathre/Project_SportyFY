@@ -59,5 +59,32 @@ namespace Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Enter Some Data.
+        /// </summary>
+        internal static string NewsContentConstant {
+            get {
+                return ResourceManager.GetString("NewsContentConstant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Categories Loaded.
+        /// </summary>
+        internal static string NoCategoryLoaded {
+            get {
+                return ResourceManager.GetString("NoCategoryLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No SubCategories Loaded.
+        /// </summary>
+        internal static string NoSubCategoriesLoaded {
+            get {
+                return ResourceManager.GetString("NoSubCategoriesLoaded", resourceCulture);
+            }
+        }
     }
 }

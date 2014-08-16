@@ -44,9 +44,19 @@
     <Reference Include="AjaxMin">
       <HintPath>..\..\TBN\BN.Web.Client\bin\AjaxMin.dll</HintPath>
     </Reference>
+    <Reference Include="AntiXssLibrary">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.FriendlyUrls">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
@@ -170,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Themes\SportyFY\" />
+    <Folder Include="StoryImages\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Users\Player\" />
     <Folder Include="Views\Users\SuperAdmin\" />
@@ -200,6 +211,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SportyFY.BuisnessAccessLayer\SportyFY.BuisnessAccessLayer.csproj">
+      <Project>{7efab29c-8743-4f23-a4c6-19f54d3100db}</Project>
+      <Name>SportyFY.BuisnessAccessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SportyFY.DataAccessLayer.SqlServer\SportyFY.DataAccessLayer.SqlServer.csproj">
       <Project>{dd66f7b7-fa03-471d-b535-5dff642222ee}</Project>
       <Name>SportyFY.DataAccessLayer.SqlServer</Name>

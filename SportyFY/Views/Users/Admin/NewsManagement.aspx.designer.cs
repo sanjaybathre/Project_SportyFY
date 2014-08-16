@@ -13,13 +13,31 @@ namespace SportyFY.Views.Users.Admin {
     public partial class NewsManagement {
         
         /// <summary>
-        /// ddl_newsCategory control.
+        /// uprogresNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_newsCategory;
+        protected global::System.Web.UI.UpdateProgress uprogresNews;
+        
+        /// <summary>
+        /// upNews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upNews;
+        
+        /// <summary>
+        /// ddl_NewsCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_NewsCategory;
         
         /// <summary>
         /// ddl_newsSubCategory control.
@@ -49,6 +67,24 @@ namespace SportyFY.Views.Users.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtNewsDate;
         
         /// <summary>
+        /// FromCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender FromCalendar;
+        
+        /// <summary>
+        /// FromCalendarFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.FilteredTextBoxExtender FromCalendarFilter;
+        
+        /// <summary>
         /// txtTags control.
         /// </summary>
         /// <remarks>
@@ -67,13 +103,31 @@ namespace SportyFY.Views.Users.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtAuthor;
         
         /// <summary>
-        /// Editor1 control.
+        /// txtContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.HTMLEditor.Editor Editor1;
+        protected global::System.Web.UI.WebControls.TextBox txtContent;
+        
+        /// <summary>
+        /// HtmlEditorExtenderContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.HtmlEditorExtender HtmlEditorExtenderContent;
+        
+        /// <summary>
+        /// litMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button litMsg;
         
         /// <summary>
         /// btnSave control.

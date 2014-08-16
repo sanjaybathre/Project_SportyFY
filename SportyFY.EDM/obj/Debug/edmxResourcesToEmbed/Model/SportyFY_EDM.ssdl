@@ -233,8 +233,6 @@
     <Property Name="NewsContent" Type="nvarchar(max)" />
     <Property Name="NewsAuthor" Type="varchar" MaxLength="100" />
     <Property Name="NewsCreateDate" Type="datetime" />
-    <Property Name="NewsRatingId" Type="uniqueidentifier" />
-    <Property Name="NewsTagId" Type="uniqueidentifier" />
     <Property Name="IsDel" Type="bit" />
     <Property Name="Userid" Type="uniqueidentifier" />
     <Property Name="NewsDate" Type="datetime" />

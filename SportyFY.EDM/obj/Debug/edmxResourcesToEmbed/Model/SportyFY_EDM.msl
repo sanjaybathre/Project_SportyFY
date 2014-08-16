@@ -153,8 +153,6 @@
           <ScalarProperty Name="NewsContent" ColumnName="NewsContent" />
           <ScalarProperty Name="NewsAuthor" ColumnName="NewsAuthor" />
           <ScalarProperty Name="NewsCreateDate" ColumnName="NewsCreateDate" />
-          <ScalarProperty Name="NewsRatingId" ColumnName="NewsRatingId" />
-          <ScalarProperty Name="NewsTagId" ColumnName="NewsTagId" />
           <ScalarProperty Name="IsDel" ColumnName="IsDel" />
           <ScalarProperty Name="Userid" ColumnName="Userid" />
         </MappingFragment>

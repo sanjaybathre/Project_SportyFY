@@ -238,8 +238,6 @@
           <Property Name="NewsContent" Type="nvarchar(max)" />
           <Property Name="NewsAuthor" Type="varchar" MaxLength="100" />
           <Property Name="NewsCreateDate" Type="datetime" />
-          <Property Name="NewsRatingId" Type="uniqueidentifier" />
-          <Property Name="NewsTagId" Type="uniqueidentifier" />
           <Property Name="IsDel" Type="bit" />
           <Property Name="Userid" Type="uniqueidentifier" />
           <Property Name="NewsDate" Type="datetime" />
@@ -727,8 +725,6 @@
           <Property Name="NewsContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="NewsAuthor" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
           <Property Name="NewsCreateDate" Type="DateTime" Precision="3" />
-          <Property Name="NewsRatingId" Type="Guid" />
-          <Property Name="NewsTagId" Type="Guid" />
           <Property Name="IsDel" Type="Boolean" />
           <Property Name="Userid" Type="Guid" />
           <NavigationProperty Name="NewsRatings" Relationship="SportyFYModel.FK_NewsRatings_NewsMaster" FromRole="NewsMaster" ToRole="NewsRatings" />
@@ -1116,8 +1112,6 @@
                 <ScalarProperty Name="NewsContent" ColumnName="NewsContent" />
                 <ScalarProperty Name="NewsAuthor" ColumnName="NewsAuthor" />
                 <ScalarProperty Name="NewsCreateDate" ColumnName="NewsCreateDate" />
-                <ScalarProperty Name="NewsRatingId" ColumnName="NewsRatingId" />
-                <ScalarProperty Name="NewsTagId" ColumnName="NewsTagId" />
                 <ScalarProperty Name="IsDel" ColumnName="IsDel" />
                 <ScalarProperty Name="Userid" ColumnName="Userid" />
               </MappingFragment>

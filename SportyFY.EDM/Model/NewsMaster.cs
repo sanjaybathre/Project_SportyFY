@@ -27,8 +27,6 @@ namespace SportyFY.EDM.Model
         public string NewsContent { get; set; }
         public string NewsAuthor { get; set; }
         public Nullable<System.DateTime> NewsCreateDate { get; set; }
-        public Nullable<System.Guid> NewsRatingId { get; set; }
-        public Nullable<System.Guid> NewsTagId { get; set; }
         public Nullable<bool> IsDel { get; set; }
         public Nullable<System.Guid> Userid { get; set; }
         public Nullable<System.DateTime> NewsDate { get; set; }

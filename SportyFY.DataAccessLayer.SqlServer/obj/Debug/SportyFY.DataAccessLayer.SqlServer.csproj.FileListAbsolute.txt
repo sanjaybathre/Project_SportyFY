@@ -3,4 +3,3 @@ D:\PROJECTS\SportyFY\SportyFY.DataAccessLayer.SqlServer\bin\Debug\SportyFY.DataA
 D:\PROJECTS\SportyFY\SportyFY.DataAccessLayer.SqlServer\bin\Debug\Elmah.dll
 D:\PROJECTS\SportyFY\SportyFY.DataAccessLayer.SqlServer\obj\Debug\SportyFY.DataAccessLayer.SqlServer.dll
 D:\PROJECTS\SportyFY\SportyFY.DataAccessLayer.SqlServer\obj\Debug\SportyFY.DataAccessLayer.SqlServer.pdb
-D:\PROJECTS\SportyFY\SportyFY.DataAccessLayer.SqlServer\obj\Debug\SportyFY.DataAccessLayer.SqlServer.csprojResolveAssemblyReference.cache
