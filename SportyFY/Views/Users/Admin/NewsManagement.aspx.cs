@@ -15,6 +15,9 @@ namespace SportyFY.Views.Users.Admin
 {
     public partial class NewsManagement : AdminBasePage
     {
+        static string category = "";
+        static string subcategory = "";
+
         // loading news category
         public void loadNewsCategories()
         {
@@ -51,7 +54,11 @@ namespace SportyFY.Views.Users.Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (HtmlEditorExtenderContent.AjaxFileUpload.IsInFileUploadPostBack)
+            {
+                // TODO
+            }
+            else if (!Page.IsPostBack)
             {
                 // setting the file restriction
                 var ajaxFileUpload = HtmlEditorExtenderContent.AjaxFileUpload;
@@ -61,14 +68,21 @@ namespace SportyFY.Views.Users.Admin
                 loadNewsCategories();
                 loadNewsSubCategories(int.Parse(ddl_NewsCategory.SelectedItem.Value));
             }
+            else if (Page.IsPostBack)
+            {
+                category = "";
+                subcategory = "";
+
+                category = ddl_NewsCategory.SelectedItem.Text;
+                subcategory = ddl_newsSubCategory.SelectedItem.Text;
+            }
         }
 
         protected void HtmlEditorExtenderContent_ImageUploadComplete(object sender, AjaxControlToolkit.AjaxFileUploadEventArgs e)
         {
             string fileName = DateTime.Now.ToString("MMM-ddd-d-HH-mm-ss-yyyy") + "_" + e.FileName;
 
-            string subpath = Server.MapPath("~/StoryImages/") + ddl_newsSubCategory.SelectedItem.Text.Trim();
-
+            string subpath = Server.MapPath("~/StoryImages/") + subcategory.Trim();
 
             //if not the create user directory
             if (!System.IO.Directory.Exists(subpath))
@@ -80,7 +94,7 @@ namespace SportyFY.Views.Users.Admin
 
                 HtmlEditorExtenderContent.AjaxFileUpload.SaveAs(filepath);
 
-                e.PostedUrl = Page.ResolveUrl(subpath + "\\" + e.FileName);
+                e.PostedUrl = Page.ResolveUrl(subpath + "\\" + fileName);
             }
             else
             {
@@ -89,7 +103,7 @@ namespace SportyFY.Views.Users.Admin
 
                 HtmlEditorExtenderContent.AjaxFileUpload.SaveAs(filepath);
 
-                e.PostedUrl = Page.ResolveUrl(subpath + "\\" + e.FileName);
+                e.PostedUrl = Page.ResolveUrl(subpath + "\\" + fileName);
             }
 
             //// Generate file path
@@ -107,11 +121,13 @@ namespace SportyFY.Views.Users.Admin
         {
             try
             {
-                for (int i = 0; i < this.Form.Controls.Count; i++)
+                string te = txtContent.Text;
+
+                foreach (var item in this.Form.Controls)
                 {
-                    if (this.Form.Controls[i] is ContentPlaceHolder)
+                    if (item is ContentPlaceHolder)
                     {
-                        ContentPlaceHolder cp_Body = this.Form.Controls[i] as ContentPlaceHolder;
+                        ContentPlaceHolder cp_Body = item as ContentPlaceHolder;
 
                         if (cp_Body.ClientID == "ContentPlaceHolder_Body")
                         {
@@ -119,6 +135,7 @@ namespace SportyFY.Views.Users.Admin
                         }                        
                     }
                 }
+
                 var t = this.Form.Controls;
             }
             catch (Exception ex)

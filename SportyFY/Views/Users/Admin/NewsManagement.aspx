@@ -41,13 +41,6 @@
     </script>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Body" runat="server">
-    <asp:UpdateProgress ID="uprogresNews" runat="server">
-        <ProgressTemplate>
-            <b>loading</b>
-        </ProgressTemplate>
-    </asp:UpdateProgress>
-    <asp:UpdatePanel ID="upNews" runat="server">
-        <ContentTemplate>
 
             <table style="width:100%;">
                 <tr>
@@ -62,7 +55,7 @@
 
                     <td>Select Subcategory</td>
                     <td>
-                        <asp:DropDownList ID="ddl_newsSubCategory" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="ddl_newsSubCategory" AutoPostBack="true" runat="server"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -100,6 +93,9 @@
                     <td>
                         <asp:TextBox ID="txtTags" runat="server"></asp:TextBox>
                     </td>
+                    <td colspan="3">
+                        put comma seperated value for different tags, this will change as the UI develops (like tag1, tag2, etc.)
+                    </td>
                 </tr>
 
                 <tr>
@@ -113,7 +109,7 @@
                 <tr>
                     <td colspan="5">News Content
                     <br />
-                        <asp:TextBox ID="txtContent" Text=" " runat="server" Height="400px" TextMode="MultiLine" Width="100%"></asp:TextBox>
+                        <asp:TextBox ID="txtContent" runat="server" Height="400px" TextMode="MultiLine" Width="100%"></asp:TextBox>
                         <ajaxToolkit:HtmlEditorExtender DisplaySourceTab="true" ID="HtmlEditorExtenderContent"
                             OnImageUploadComplete="HtmlEditorExtenderContent_ImageUploadComplete"
                             EnableSanitization="false" TargetControlID="txtContent" runat="server">
@@ -165,7 +161,4 @@
                     </td>
                 </tr>
             </table>
-
-        </ContentTemplate>
-    </asp:UpdatePanel>
 </asp:Content>

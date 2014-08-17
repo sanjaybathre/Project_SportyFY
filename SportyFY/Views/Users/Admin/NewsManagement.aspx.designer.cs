@@ -13,24 +13,6 @@ namespace SportyFY.Views.Users.Admin {
     public partial class NewsManagement {
         
         /// <summary>
-        /// uprogresNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdateProgress uprogresNews;
-        
-        /// <summary>
-        /// upNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upNews;
-        
-        /// <summary>
         /// ddl_NewsCategory control.
         /// </summary>
         /// <remarks>

@@ -30,13 +30,13 @@ namespace SportyFY.BuisnessAccessLayer
                     _NewsMaster.Userid = RoleAuth.GetUserID();
                     _NewsMaster.NewsCreateDate = DateTime.Now;
 
-                    for (int i = 0; i < _refContentPlaceHolder.Controls.Count; i++)
+                    foreach (var item in _refContentPlaceHolder.Controls)
                     {
-                        if (_refContentPlaceHolder.Controls[i] is DropDownList)
+                        if (item is DropDownList)
                         {
-                            ddl = _refContentPlaceHolder.Controls[i] as DropDownList;
+                            ddl = item as DropDownList;
 
-                            if (ddl.ClientID == "ddl_NewsCategory")
+                            if (ddl.ID == "ddl_NewsCategory")
                             {
                                 if (ddl.SelectedItem.Value == "-1")
                                 {
@@ -49,9 +49,9 @@ namespace SportyFY.BuisnessAccessLayer
                                     _NewsMaster.CategoryId = int.Parse(ddl.SelectedItem.Value.Trim());
                                 }
                             }
-                            else if (ddl.ClientID == "ddl_newsSubCategory")
+                            else if (ddl.ID == "ddl_newsSubCategory")
                             {
-                                ddl = _refContentPlaceHolder.Controls[i] as DropDownList;
+                                ddl = item as DropDownList;
 
                                 if (ddl.SelectedItem.Value == "-1")
                                 {
@@ -65,11 +65,11 @@ namespace SportyFY.BuisnessAccessLayer
                                 }
                             }
                         }
-                        else if (_refContentPlaceHolder.Controls[i] is TextBox)
+                        else if (item is TextBox)
                         {
-                            txt = _refContentPlaceHolder.Controls[i] as TextBox;
+                            txt = item as TextBox;
 
-                            if (txt.ClientID == "txtTitle")
+                            if (txt.ID == "txtTitle")
                             {
                                 if (txt.Text == "")
                                 {
@@ -82,7 +82,7 @@ namespace SportyFY.BuisnessAccessLayer
                                     _NewsMaster.NewsTitle = txt.Text.Trim();
                                 }
                             }
-                            else if (txt.ClientID == "txtNewsDate")
+                            else if (txt.ID == "txtNewsDate")
                             {
                                 if (txt.Text == "")
                                 {
@@ -95,7 +95,7 @@ namespace SportyFY.BuisnessAccessLayer
                                     _NewsMaster.NewsDate = DateTime.Parse(txt.Text.Trim());
                                 }
                             }
-                            else if (txt.ClientID == "txtAuthor")
+                            else if (txt.ID == "txtAuthor")
                             {
                                 if (txt.Text == "")
                                 {
@@ -105,10 +105,10 @@ namespace SportyFY.BuisnessAccessLayer
                                 else
                                 {
                                     // creating the NewsMaster data
-                                    _NewsMaster.NewsDate = DateTime.Parse(txt.Text.Trim());
+                                    _NewsMaster.NewsAuthor = txt.Text.Trim();
                                 }
                             }
-                            else if (txt.ClientID == "txtContent")
+                            else if (txt.ID == "txtContent")
                             {
                                 if (txt.Text == "")
                                 {
@@ -121,7 +121,7 @@ namespace SportyFY.BuisnessAccessLayer
                                     _NewsMaster.NewsContent = txt.Text;
                                 }
                             }
-                            else if (txt.ClientID == "txtTags")
+                            else if (txt.ID == "txtTags")
                             {
                                 if (txt.Text == "")
                                 {
@@ -131,7 +131,11 @@ namespace SportyFY.BuisnessAccessLayer
                                 else
                                 {
                                     // creating the NewsMaster data
-                                    lstTags.Add(txt.Text.Trim());
+                                    string[] tags = txt.Text.Trim().Split(',').ToArray();
+                                    for (int i = 0; i < tags.Length; i++)
+                                    {
+                                        lstTags.Add(tags[i].Trim());
+                                    }                                    
                                 }
                             }
                         }
